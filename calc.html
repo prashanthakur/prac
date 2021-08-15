@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JavaScript</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+      .btn-success , .btn-info, .btn-primary , .btn-warning{
+          margin-top:10px;
+          margin-left:1%;
+      }
+      .output{
+          font-size:40px;
+          color:rgb(36, 118, 143);
+          font-weight: bold;
+      }
+      .suboutput{
+        font-size:15px;
+          color:rgb(66, 183, 219);
+          font-weight: bold;
+      }
+      #name{
+          color:rgb(36, 118, 143);
+          font-size: 40px;
+          font-family: bold;
+          font-style: italic;
+          display: inline-block;
+
+      }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <p id="name">Calculator</p>
+            <button type="button" class="btn btn-default btn-sm">
+              <span class="glyphicon glyphicon-phone"></span> Web 
+            </button>
+            <hr>
+        <label>No.1</label>
+        <input id="first" type="text"/>
+        <label>No.2</label>
+        <input id="second" type="text"/><br>
+        <p class="output"></p>
+        <p class="suboutput"></p>
+        <br>
+        <button onclick="add()" type="button" class="btn btn-success">Add</button>
+        <button onclick="sub()" type="button" class="btn btn-info">Substract</button>
+        <button onclick="div()" type="button" class="btn btn-primary">Divide</button>
+        <button onclick="mul()" type="button" class="btn btn-warning">Multiply</button>
+        
+    </div>
+    <script>
+        function add(){
+    var a = document.getElementById('first').value;
+    var b = document.getElementById('second').value;
+    var out = Number(a)+Number(b)
+    document.getElementsByClassName('output')[0].innerText= out
+    document.getElementsByClassName('suboutput')[0].innerText= "Thanks for Using"
+}
+function sub(){
+    var a = document.getElementById('first').value;
+    var b = document.getElementById('second').value;
+    var out = Number(a)-Number(b)
+    document.getElementsByClassName('output')[0].innerText= out
+    document.getElementsByClassName('suboutput')[0].innerText= "Thanks for Using"
+}
+function div(){
+    var a = document.getElementById('first').value;
+    var b = document.getElementById('second').value;
+    var out = Number(a)/Number(b)
+    document.getElementsByClassName('output')[0].innerText= out
+    document.getElementsByClassName('suboutput')[0].innerText= "Thanks for Using"
+}
+function mul(){
+    var a = document.getElementById('first').value;
+    var b = document.getElementById('second').value;
+    var out = Number(a)*Number(b)
+    document.getElementsByClassName('output')[0].innerText= out
+    document.getElementsByClassName('suboutput')[0].innerText= "Thanks for Using"
+}
+
+    </script>
+</body>
