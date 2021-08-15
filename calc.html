@@ -31,6 +31,21 @@
           display: inline-block;
 
       }
+      .container{
+          height:400px;
+          width:50%;
+          box-shadow: 1px 1px 10px gray;
+          margin-top: 5%;
+      }
+      footer{
+          color:indianred;
+          font-weight: bold;
+          font: 15px;
+      }
+      label{
+          font-size: 15px;
+      }
+
   </style>
 </head>
 <body>
@@ -40,18 +55,22 @@
               <span class="glyphicon glyphicon-phone"></span> Web 
             </button>
             <hr>
-        <label>No.1</label>
+        <label>Enter No.1</label>
         <input id="first" type="text"/>
-        <label>No.2</label>
+        <label>Enter No.2</label>
         <input id="second" type="text"/><br>
         <p class="output"></p>
         <p class="suboutput"></p>
         <br>
-        <button onclick="add()" type="button" class="btn btn-success">Add</button>
-        <button onclick="sub()" type="button" class="btn btn-info">Substract</button>
-        <button onclick="div()" type="button" class="btn btn-primary">Divide</button>
-        <button onclick="mul()" type="button" class="btn btn-warning">Multiply</button>
-        
+        <button onclick="add()" type="button" class="btn btn-success"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp Add</button>
+        <button onclick="sub()" type="button" class="btn btn-info"><i class="glyphicon glyphicon-minus"></i>&nbsp Substract</button>
+        <button onclick="div()" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-th-large"></i>&nbsp
+            Divide</button>
+        <button onclick="mul()" type="button" class="btn btn-warning"><i class="glyphicon glyphicon-asterisk"></i>&nbsp Multiply</button> 
+        <hr> 
+        <footer>
+            with &#10084 from Prashant 
+        </footer>
     </div>
     <script>
         function add(){
